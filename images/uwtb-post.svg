@@ -13,7 +13,7 @@ style="display: block;margin-left: auto;margin-right: auto;">
 
 
 .s1_1{
-font-size: 62.64px;
+font-size: 220.00px;
 font-family: DejaVuSans_9;
 fill: TRANSPARENT;
 }
@@ -36,16 +36,16 @@ L935,0 Z "
 fill="#FFFFFF" stroke="none" />
 <g clip-path="url(#c0_1)">
 <g fill="#000000" >
-<use xlink:href="#f0_2" transform="matrix(41,0,0,41,110.2,168.2)" />
-<use xlink:href="#f0_3" transform="matrix(41,0,0,41,158.4,168.2)" />
-<use xlink:href="#f0_4" transform="matrix(41,0,0,41,186.2,168.2)" />
-<use xlink:href="#f0_5" transform="matrix(41,0,0,41,229,168.2)" />
+<use xlink:href="#f0_2" transform="matrix(144,0,0,144,110.2,314.3)" />
+<use xlink:href="#f0_3" transform="matrix(144,0,0,144,279.6,314.3)" />
+<use xlink:href="#f0_4" transform="matrix(144,0,0,144,377.9,314.3)" />
+<use xlink:href="#f0_5" transform="matrix(144,0,0,144,528.4,314.3)" />
 </g>
 </g>
 <text 
 x="110" 
-y="168" 
-dx="0,0,-7.1,0" 
+y="314" 
+dx="0,0,-24.2,0" 
 class="s1_1"
 >DLVP</text>
 
