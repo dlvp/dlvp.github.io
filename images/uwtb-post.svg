@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+
+<!-- Page 1 -->
+<svg x="0" y="0" width="935" height="1210" viewBox="0 0 935 1210" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+style="display: block;margin-left: auto;margin-right: auto;">
+<defs>
+<clipPath id="c0_1"><path d="M0,1210L0,0L935,0l0,1210Z" /></clipPath>
+
+<style type="text/css"><![CDATA[
+
+
+.s1_1{
+font-size: 62.64px;
+font-family: DejaVuSans_9;
+fill: TRANSPARENT;
+}
+text::-moz-selection {
+	color: transparent;
+	background: rgba(0, 106, 173, 0.4);
+}
+text::selection {
+	color: transparent;
+	background: rgba(0, 106, 173, 0.4);
+}
+
+]]></style>
+
+</defs>
+<path d="M0,0
+L0,1210
+L935,1210
+L935,0 Z " 
+fill="#FFFFFF" stroke="none" />
+<g clip-path="url(#c0_1)">
+<g fill="#000000" >
+<use xlink:href="#f0_2" transform="matrix(41,0,0,41,110.2,168.2)" />
+<use xlink:href="#f0_3" transform="matrix(41,0,0,41,158.4,168.2)" />
+<use xlink:href="#f0_4" transform="matrix(41,0,0,41,186.2,168.2)" />
+<use xlink:href="#f0_5" transform="matrix(41,0,0,41,229,168.2)" />
+</g>
+</g>
+<text 
+x="110" 
+y="168" 
+dx="0,0,-7.1,0" 
+class="s1_1"
+>DLVP</text>
+
+
+<defs>
+	<path d="M482.2,124.2c0,0,230.6,0,337.7,104.3c0,0,107,104.4,107,329.5c0,0,0,223.6,-107,327.5c0,0,-107.1,104,-337.7,104l-182,0l0,-865.3ZM149.6,0l0,1113.7l309.5,0c0,0,324.1,0,475.6,-134.7c0,0,151.6,-134.6,151.6,-421.1c0,0,0,-287.9,-152.3,-422.9C934,135,781.7,0,459.1,0Z" 
+	id="f0_2"
+	transform="scale(0.001,-0.001)" />
+
+	<path d="M149.6,0l0,1113.7l150.6,0l0,-986.6l542.6,0L842.8,0Z" 
+	id="f0_3"
+	transform="scale(0.001,-0.001)" />
+
+	<path d="M437.1,0L11.7,1113.7l157.5,0L522.1,176l353.7,937.7l156.7,0L607.9,0Z" 
+	id="f0_4"
+	transform="scale(0.001,-0.001)" />
+
+	<path d="M489.3,572c0,0,104.9,0,162.3,54.3c0,0,57.3,54.4,57.3,154.8c0,0,0,99.8,-57.3,154.1c0,0,-57.4,54.3,-162.3,54.3l-189.1,0l0,-417.5ZM149.6,0l0,1113.7l339.7,0c0,0,187.2,0,283.1,-84.6c0,0,95.9,-84.7,95.9,-248c0,0,0,-164.8,-95.9,-249c0,0,-95.9,-84.3,-283.1,-84.3l-189.1,0L300.2,0Z" 
+	id="f0_5"
+	transform="scale(0.001,-0.001)" />
+
+
+</defs>
+
+<!-- Any embedded fonts defined here -->
+<style type="text/css" ><![CDATA[
+
+@font-face {
+	font-family: DejaVuSans_9;
+	src: url("fonts/DejaVuSans_9.woff") format("woff");
+}
+
+]]></style>
+
+</svg>
