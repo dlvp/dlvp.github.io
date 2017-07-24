@@ -1,0 +1,18 @@
+<article class="post">
+    <div class="post-meta">
+        <time>{{ post.date| date: '%B %d, %Y' }}</time>
+        {% if site.data.series[post.series] %}
+            &mdash; <a class="channel-link" href="/series/{{ post.series }}">{{ site.data.series[post.series].name }}</a>
+        {% endif %}
+    </div>
+
+    <h1 class="post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+    <div class="entry">
+        {% if post.description %}
+            {{ post.description }}
+        {% else %}
+            {{ post.excerpt | strip_html }}
+        {% endif %}
+    </div>
+</article>

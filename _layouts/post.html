@@ -1,0 +1,64 @@
+---
+layout: default
+---
+
+<div class="toc-container">
+    <nav class="toc hidden">
+        <h1 class="toc-root"><a href="#">#</a></h1>
+        <div class="toc-content"></div>
+    </nav>
+</div>
+
+
+<div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      <a href="{{ site.baseurl }}/" class="site-avatar">
+        <img src="/images/uwtb-post.svg" />
+      </a>
+    </header>
+  </div>
+</div>
+
+<article role="main" class="main post post-main container">
+    <header>
+        <h1 class="post-title">{{ page.title }}</h1>
+        <div class="post-meta">
+            <time>{{ page.date | date: "%B %e, %Y" }}</time>
+            {% if site.data.series[page.series] %}
+                &mdash; <a class="channel-link" href="/series/{{ page.series }}">{{ site.data.series[page.series].name }}</a>
+            {% endif %}
+        </div>
+    </header>
+    
+    <div class="entry">{{ content }}</div>
+
+    <footer class="post-footer">
+        <nav class="post-nav clearfix">
+            <div class="prev">
+                {% if page.previous.url %} 
+                <a href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a> 
+                {% endif %}
+            </div>
+            <div class="next">
+                {% if page.next.url %} 
+                <a href="{{page.next.url}}">{{page.next.title}} &raquo;</a> 
+                {% endif %} 
+            </div>
+        </nav>
+    </footer>
+</article>
+
+<nav class='post-pagination body-pagination'>
+    {% if page.previous.url %} 
+    <a title="Previous Post" href="{{page.previous.url}}" class="post-pagination-link prev-post"></a>
+    {% endif %}
+    {% if page.next.url %} 
+    <a title="Next Post" href="{{page.next.url}}" class="post-pagination-link next-post"></a>
+    {% endif %} 
+    
+</nav>
+
+<script type="text/javascript" src="/scripts/jquery.js"></script>
+<script type="text/javascript" src="/scripts/jquery.toc.js"></script>
+<script type="text/javascript" src="/scripts/index.js"></script>
