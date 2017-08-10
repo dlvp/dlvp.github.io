@@ -25,22 +25,22 @@ Two files are relevant for our purposes, they are HEP and HepNames, the first co
 
 The first problem to face is the size of the HEP file, something short of 18 GB. Simply reading it into memory is out of the question as it would annihilate my laptop. One possibility is to be somewhat clever and use some library like `ElementTree` to parse the XML. I ain't got no time to learn all that. One very efficient brute force approach is to parse the XML file like a normal text file and save the relevant information from each record, without overloading your memory.
 
-<!--```js-->
-<!--rec = ''-->
-<!--with open('HEP-records.xml','rb') as f:-->
-<!--    flag = False-->
-<!--    for line in f:-->
-<!--        if '<record>' in line:-->
-<!--            rec = line-->
-<!--            flag = True-->
-<!--        elif '</record>'in line:-->
-<!--            rec += line-->
-<!--            flag = False-->
-<!--            process_record(rec)-->
-<!--            del rec-->
-<!--        elif append:-->
-<!--            rec += line-->
-<!--```-->
+```js
+rec = ''
+with open('HEP-records.xml','rb') as f:
+    flag = False
+    for line in f:
+        if '<record>' in line:
+            rec = line
+            flag = True
+        elif '</record>'in line:
+            rec += line
+            flag = False
+            process_record(rec)
+            del rec
+        elif append:
+            rec += line
+```
 
 The previous loop read the content of the XML between two `<record>` tags and call the function `process_record` on it. This function now has to deal with a very small chunk of the original XML file and extract the relevant info from it. For instance
 
