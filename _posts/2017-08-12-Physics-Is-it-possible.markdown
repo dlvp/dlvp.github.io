@@ -5,11 +5,11 @@ series: Physics
 date: '2017-08-12 18:00:00'
 ---
 
-My boss has been away for a couple of weeks. I'm in that weird limbo between the completion of a project and the beginning of another one. Uncertain about what to do next and somewhat bored to even start thinking. I figured that all I needed was some good old ego boost. Didn't turn out as i thought.
+My boss has been away for a couple of weeks. I'm in that weird limbo between the completion of a project and the beginning of another one. Uncertain about what to do next and somewhat bored to even start thinking. I figured that all I needed was some good old ego boost. Didn't turn out as I thought.
 
 The community of physicists to which I belong, high energy physics, is somewhat small and peculiar. Our job is to develop new ideas and write papers about them. The new ideas we try to develop are about Nature, trying to understand and explain the way it works at the most fundamental level.
 
-The papers we write are usually published on scientific journals like in any other scientific field. What is peculiar about high energy physics is that nobody really cares about scientific journals and to make our ideas immediately accessible as they come to final form, the [arXiv] was created (in the beginning of the nineties). When a paper of mine is ready I would just post it on the arXiv for anybody to read it. For free.
+The papers we write are usually published on scientific journals like in any other scientific field. What is peculiar about high energy physics is that nobody really cares about scientific journals and to make our ideas immediately accessible as they come to final form, the [arXiv] was created (at the beginning of the nineties). When a paper of mine is ready I would just post it on the arXiv for anybody to read it. For free.
 
 The [arXiv] is divided in many categories depending on the discipline. All my papers are in two of them [hep-ph] and [hep-th], standing for High Energy Physics - Phenomenology and Theory.
 
@@ -114,7 +114,7 @@ I joined the field `aut1` and `aut2` into the new field `authors` and extracted 
 
 Now the various simplifications for the analysis. I am interested in comparing my bibliographical record with that of authors active in my field and belonging to my same generation. I published my first paper in the second half of the noughties. All my papers are sent to the arXiv before they are pubished on a journal and this is pretty common for people in my field. More specifically all my papers appear on the hep-ph and hep-th categories of the arXiv.
 
-I will thuse rate authors in terms of papers they wrote on hep-ph and hep-th. I will furthermore restrict to those who published their first paper on hep-ph and hep-th no earlier than 2006.
+I will thus rate authors in terms of papers they wrote on hep-ph and hep-th. I will furthermore restrict to those who published their first paper on hep-ph and hep-th no earlier than 2006.
 
 The arXiv category of a paper can be selected according to the `cat` field
 
