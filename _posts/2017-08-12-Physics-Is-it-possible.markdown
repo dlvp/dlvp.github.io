@@ -42,7 +42,7 @@ with open('HEP-records.xml','rb') as f:
             rec += line
 ```
 
-The previous loop read the content of the XML between two `<record>` tags and call the function `process_record` on it. This function now has to deal with a very small chunk of the original XML file and extract the relevant info from it. For instance
+The previous loop reads the content of the XML between two `<record>` tags and calls the function `process_record` on it. This function now has to deal with a very small chunk of the original XML file and extract the relevant info from it. For instance
 
 ```js
 import xml.etree.ElementTree as ET
