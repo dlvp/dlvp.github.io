@@ -288,6 +288,8 @@ More on point, it is not surprising that all the classical indices agree in deci
 
 Am I surprised by the results? I'm not sure. I know personally many of the people in these Top20, I may have even written papers with some of them. So I obviously have my own opinions. This bibliographical classification is very partial. Apart from more technical details about the contribution of each author to a paper or the specific field of study, it is clear that the authors in any of these Top20 have awesome records. All the various bibliographical indices I have been looking at obviously favor authors who have done a lot of work. On the other hand there are very good physicists, with many ideas, but writing fewer papers and they end up being penalized by these ratings.
 
+So take everything with a grain of salt, don't be too happy, don't be depressed, and in particular don't be mad at me.
+
 
 
 [arXiv]: https://arxiv.org/
