@@ -278,8 +278,7 @@ The results are then exported as a `csv` file, the first column being the paper 
 
 Uhm. The global message is that PageRank is pretty consistent with the other bibliometric indices. This is not surprising as the first twenty entries all have pretty impressive records, regardless of the particular index used to evaluate them. Looking more in detail, you can see that the first entry according to PageRank matches with the first entry according to number of papers, while it was out of Top20 for the other indices. As already pointed out, many of his paper belong to nuclear physics rather than hep-ph or th. So this can lead to the anomalous behavior.
 
-
-#Conclusions
+# Conclusions
 
 From a very personal standpoint this exercise did not really lead to any kind of ego boost. I never end up in the first 20, or in the first 50, and I am not even steadily in the first 100. My place is in the first 150 for the majority of the indices. It is not awesome, but it isn't bad either.
 
