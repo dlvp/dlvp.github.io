@@ -144,7 +144,7 @@ The number of young authors so defined is 10983. I also define `data_HEP_young` 
 
 So some disclaimer. If you are reading this and your most cited paper appeared on astro-ph, well, it will not be counted. Similarly if you belong to a big experimental collaboration but you are also a theorist, your 1000+ papers from [CMS] will not be counted. Also, give a 10% error margin to all the numbers I will quote. And don't get mad at me.
 
-Notice however that ALL paper of the INSPIRE database will be considered for citations. So if you paper written on hep-ph had impact on some other field like hep-ex or astro-ph, this will matter.
+Notice however that ALL paper of the INSPIRE database will be considered for citations. So if your paper written on hep-ph had impact on some other field like hep-ex or astro-ph, this will matter.
 
 
 # Results
