@@ -15,7 +15,7 @@ The [arXiv] is divided in many categories depending on the discipline. All my pa
 
 The arXiv did not exist when [Steven Weinberg] wrote his most cited and Nobel worth paper, [A Model of Leptons], so you will not find it there. Luckily there is another online tool which is bread and butter for high energy physicists, which allows you to search for every single paper ever written by the community. This is the [INSPIRE] database.
 
-INSPIRE periodically upload a [screenshot] of the whole high energy physics production (and more) in XML form. Every paper and author is assigned a unique identifier. The database contains information about each paper, like title, abstract, date of appearance, arXiv identifier (if it applies), and so on. An almost complete description of the database can be found [here].
+INSPIRE periodically uploads a [screenshot] of the whole high energy physics production (and more) in XML form. Every paper and author is assigned a unique identifier. The database contains information about each paper, like title, abstract, date of appearance, arXiv identifier (if it applies), and so on. An almost complete description of the database can be found [here].
 
 So my plan: download the INSPIRE database and compare various bibliographical indices for the high energy physicist of my generation. Possibly turn out to be a freaking boss.
 
