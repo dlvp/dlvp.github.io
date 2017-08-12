@@ -284,7 +284,7 @@ From a very personal standpoint this exercise did not really lead to any kind of
 
 More on point, it is not surprising that all the classical indices agree in deciding the Top20. What is probably more surprising is that PageRank agrees with them too. One possible reason for this behavior is that in order for PageRank to become different than, say, citations, more time (in terms of paper being written) is needed. As the following figure show, PageRank is indeed very much correlated with the classical indices.
 
-{% include image.html file="corr.png" description="Correlation between PageRank (black `alpha=0.85`, blue `alpha=0.5`) and the classical indices." %}
+{% include image.html file="corr.png" description="Correlation between PageRank (black: alpha=0.85, blue: alpha=0.5) and the classical indices." %}
 
 Am I surpsrised by the results? I'm not sure. I know personally many of the people in these Top20, I may have even written papers with some of them. So I obviously have my own opinions. This bibliographical classification is very partial. Apart from more technical details about the contribution of each author to a paper or the specific field of study, it is clear that the authors in any of these Top20 have awesome records. All the various bibliographical indices I have been looking at obviously favor authors who have done a lot of work. On the other hand there are very good physicists, with many ideas, but writing fewer papers and they end up being penalized by these ratings.
 
