@@ -54,7 +54,7 @@ def process_record(rec):
     append_record(dictionary)
 ```
 
-In this case the `001` tag read the unique INSPIRE ID for the paper. Many more field have to be recorded for the analysis. The function `append_record` finally append the dictionary to a file (again without having to load the whole thing in memory)
+In this case the `001` tag read the unique INSPIRE ID for the paper. Many more fields have to be recorded for the analysis. The function `append_record` finally append the dictionary to a file (again without having to load the whole thing in memory)
 
 ```js
 import os
