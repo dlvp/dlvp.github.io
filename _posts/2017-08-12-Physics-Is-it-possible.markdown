@@ -196,11 +196,11 @@ data_authors= data_authors.assign(cites_N=pd.Series(cites_N_series.tolist()).val
 
 And these are the results, first 20 ordered by `cites`.
 
-{% include image.html file="cites.png" description="Lots of Monte Carlo peeps" %}
+{% include image.html file="cites.png" description="Ordering by total citations: lots of Monte Carlo peeps" %}
 
 Many of the authors that end up at the top of the chart now are people working in developing numerical tools for QCD calculations and collider studies. These tools are widely used by the hep-ph and hep-ex communities and lots of citations ensue. Ordering by `cites_N` things change a little bit, in particular many more hep-th people pop up.
 
-{% include image.html file="citesN.png" description="The rise of the theorists" %}
+{% include image.html file="citesN.png" description="Ordering by normalized citation count: the rise of the theorists" %}
 
 ### The h-index
 
@@ -216,7 +216,7 @@ def hIndex(citations):
     return max([min(k+1, v) for k,v in enumerate(citations)]) if citations else 0
 ```
 
-{% include image.html file="hindex" description="h-rank" %}
+{% include image.html file="hindex.png" description="h-rank" %}
 
 You can start to get used to some of the first entries in these lists. Just for comparison, my h-index come out to be 19. I am within the first 150 authors. Not impressive. Could be worse.
 
