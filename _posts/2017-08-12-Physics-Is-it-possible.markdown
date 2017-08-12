@@ -2,7 +2,7 @@
 layout: post
 title: Is it possible to rate a physicist (?)
 series: Physics
-date: '2017-08-212 18:00:00'
+date: '2017-08-12 18:00:00'
 ---
 
 My boss has been away for a couple of weeks. I'm in that weird limbo between the completion of a project and the beginning of another one. Uncertain about what to do next and somewhat bored to even start thinking. I figured that all I needed was some good old ego boost. Didn't turn out as i thought.
