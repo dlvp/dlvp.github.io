@@ -206,7 +206,7 @@ Many of the authors that end up at the top of the chart now are people working i
 
 One widely used bibliographical index is the so called [h-index]. Your h-index is the largest number N for which the following condition apply: you have at least N papers each of which has N citations or more. Here is a little schematic from Wikipedia
 
-{% include image.html file="hindexwiki.png" description="It is maybe not surprising why the h-index is very much correlated to the squareroot of the number of citations [link]." %}
+{% include image.html file="hindexwiki.png" description="It is maybe not surprising why the h-index is very much correlated to the squareroot of the number of citations." %}
 
 Given an author and the list `citations` of the number of citations of his papers, the h-index can be calculated like [this]
 
@@ -304,7 +304,6 @@ So take everything with a grain of salt, don't be too happy, don't be depressed,
 [CMS]: http://cms.web.cern.ch/news/what-cms
 [H-index]: https://en.wikipedia.org/wiki/H-index
 [this]: http://www.learn4master.com/interview-questions/leetcode/leetcode-h-index
-[link]: http://www.ams.org/notices/201409/rnoti-p1040.pdf
 [PageRank]: https://en.wikipedia.org/wiki/PageRank
 [Larry Page]: https://en.wikipedia.org/wiki/Larry_Page
 [Mathematica]: https://www.wolfram.com/mathematica/
