@@ -307,4 +307,4 @@ So take everything with a grain of salt, don't be too happy, don't be depressed,
 [PageRank]: https://en.wikipedia.org/wiki/PageRank
 [Larry Page]: https://en.wikipedia.org/wiki/Larry_Page
 [Mathematica]: https://www.wolfram.com/mathematica/
-[fucntion]: http://reference.wolfram.com/language/ref/PageRankCentrality.html
+[function]: http://reference.wolfram.com/language/ref/PageRankCentrality.html
