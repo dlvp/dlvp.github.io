@@ -4,6 +4,8 @@ title: sNNarXiv 1.0
 series: Physics
 date: '2017-08-25 8:00:00'
 ---
+## This post is still work in progress !!
+
 
 I talked about the [arXiv] in my previous post. If you are a theoretical phisicist and you write a paper you will post it there whenever it is ready. Everyday (Friday and Saturday excluded) at 8PM Eastern US Time the new papers of the day will appear on the website. Notice in also that the 'X' in arXiv is supposed to be a greek 'chi' so that arXiv is pronounced 'archive'. The following is a screenshot of papers titles and abstracts from a random Friday. 
 
@@ -23,9 +25,21 @@ What I will try to do in practice is to have an algorithm which is capable of ge
 
 The technologies that I will need are those used in Natural Language Processing (NLP) in particular Recurrent Neural Networks (RNN) and distributed representations of words like [Word2vec] or [GloVe].
 
-What I will in practice do, is to train a RNN on the corpus made of titles and abstracts from hep-th, and then use such trained RNN to generate new samples. To be precise I will train two differen RNN, one for the titles and one for the abstract. This is one of the main shortcomings of my procedure: in a given generated pair of title and abstract, the first will have no relation whatsoever with the second. One way to fix this would be to treat the pair (title, abstract) as a single unit. For some reason this was not working well given my time/computing resources. Another, more ambitious, way would be to generate an abstract and then build an algorithm which is able to generate a title conditioning on the abstract, this looks quite complicated to me.
+### Overview
 
-## The data
+What I will do in practice, is to train a RNN on the corpus made of titles and abstracts from hep-th, and then use such trained RNN to generate new samples. To be precise I will train two different RNNs, one for the titles and one for the abstract. This is, I believe, the main shortcoming of my procedure: in a given generated pair of title and abstract, the first will have no relation whatsoever with the second. One way to fix this would be to treat the pair (title, abstract) as a single unit. For some reason this was not working well given my time/computing resources. Another way would be to generate an abstract and then build an algorithm which is able to generate a title conditioning on that abstract. This looks quite complicated to me.
+
+One of the most famous example of text generation using an RNN is the one in Andrej Karpathy's [blog](http://karpathy.github.io/2015/05/21/rnn-effectiveness/), in which an RNN trained on the Shakespeare corpus is then used to generate new text character by character. This approach would be immediately exportable to the sNNarXiv. The problem is that it doesn't work well. Maybe again because of limited time/computing resources the results that comes out try to do this are not good. If the RNN is trained on sequences of characters, before being able to generate reasonable abstracts, it has to learn english syntax and the training become very long, probably too long given the limited size of the training set.
+
+The strategy I will follow is instead to train the RNN on the sequence of words making the titles and abstracts.
+
+In the following I will describe the algorithm used to generate abstracts and briefly sketch the modification needed for the titles, as these are very minor.
+
+# The data
+
+The data I will use for training 
+
+
 
 
 
