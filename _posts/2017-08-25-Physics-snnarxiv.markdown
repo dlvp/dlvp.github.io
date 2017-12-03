@@ -15,9 +15,22 @@ The set of rules used by the snarXiv can be found [here](https://github.com/davi
 
 # sNNarXiv
 
-As we move toward the final and complete domination of the human race by artificial intelligences, one small project to pass away my remaining time as a free biological being is to build an alternative version of snarXiv using machine learning techniques. From now, I will refer to this attempt as sNNarXiv. 
+As we move toward the final and complete domination of the human race by artificial intelligences, one small project to pass away my remaining time as a free biological being is to build an alternative version of snarXiv using machine learning techniques. From now on I will refer to this attempt as sNNarXiv. 
 
 <strong>DISCLAIMER</strong>. As I am not a machine learning expert, I will end up using mostly off-the-shelf code (and probably old) written by others, with minor but important modification. I will try to keep track of all the simplification I am making and points of possible improvement as, after all, I want to obtain something that works as fast as possible, leaving all the possible improvements to the future (perhaps infinitely far in time).
+
+What I will try to do in practice is to have an algorithm which is capable of generating titles and abstracts sounding like those that you can read on the theoretical physics section of the arXiv, [hep-th]. Choosing hep-th and not another category is a conscious choice made to minimize the shortcomings of my algorithms. Hep-th papers contain more jargon and oddly-sounding words than other sections of the arXiv: even if my algorithm sucks, its results will sucks a little bit less when applied to hep-th.
+
+The technologies that I will need are those used in Natural Language Processing (NLP) in particular Recurrent Neural Networks (RNN) and distributed representations of words like [Word2vec] or [GloVe].
+
+What I will in practice do, is to train a RNN on the corpus made of titles and abstracts from hep-th, and then use such trained RNN to generate new samples. To be precise I will train two differen RNN, one for the titles and one for the abstract. This is one of the main shortcomings of my procedure: in a given generated pair of title and abstract, the first will have no relation whatsoever with the second. One way to fix this would be to treat the pair (title, abstract) as a single unit. For some reason this was not working well given my time/computing resources. Another, more ambitious, way would be to generate an abstract and then build an algorithm which is able to generate a title conditioning on the abstract, this looks quite complicated to me.
+
+## The data
+
+
+
+
+
 
 
 
@@ -316,7 +329,9 @@ So take everything with a grain of salt, don't be too happy, don't be depressed,
 
 [arXiv]: https://arxiv.org/
 [CFG]: https://en.wikipedia.org/wiki/Context-free_grammar
-
+[hep-th]: https://arxiv.org/list/hep-th/new
+[Word2vec]: https://en.wikipedia.org/wiki/Word2vec
+[GloVe]: https://nlp.stanford.edu/projects/glove/
 
 
 [hep-ph]: https://arxiv.org/list/hep-ph/new
