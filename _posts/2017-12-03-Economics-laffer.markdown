@@ -35,7 +35,7 @@ My readers (according to Google Analytics they are a folk from Russia and anothe
 
 In particular if the function is positive there will be a maximum. This is the special point T. 
 
-The first obvious argument against the proposers of lowering taxes because of the Laffer curve is that we may already be living to the left of T. Meh. Maybe T exists but it is very large, like [70%]! Take this Arthur.
+The first obvious argument against the proposers of lowering taxes because of the Laffer curve is that we may already be living to the left of T, so that decreasing taxation will also decrease revenues. Meh. Maybe T exists but it is very large, like [70%]! Take this Arthur.
 
 Another possible issue is that no one guarantees there to be a single maximum. The curve can have two maxima and a minima between them. Or it can be all wiggly. So if you lower tax rate by big steps you can end up in a minimum and not a maximum. 
 
