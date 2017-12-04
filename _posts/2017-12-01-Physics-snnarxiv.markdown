@@ -43,7 +43,6 @@ All text in parethesis is removed from the abstracts. Abstract can contain formu
 
 ``
 re.sub('\$.*?\$','xxxxx',abstract, flags=re.DOTALL)
-
 ``
 
 Sometimes people just put theis formulas with no `$` signs in their abstract. In order to take care of that I define a set of standard characters 
