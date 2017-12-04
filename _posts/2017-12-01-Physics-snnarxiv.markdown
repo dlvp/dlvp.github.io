@@ -2,7 +2,7 @@
 layout: post
 title: sNNarXiv 1.0
 series: Physics
-date: '2017-08-25 8:00:00'
+date: '2017-12-01 8:00:00'
 ---
 ## This post is still work in progress !!
 
