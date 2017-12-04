@@ -11,9 +11,11 @@ At some point a guest was introduced. And he was introduced as a somewhat legend
 
 But the legend of this man comes from a dinner in 1974 held at the Washington Hotel in Washington DC. During this dinner mythology wants that our hero sketched a now fundamental pillar of economic science on one of the napkins trying to convince flabbergasted Dick Cheney and Donald Rumsfeld that raising taxes is not always a good idea and higher taxation doesn't necessarily mean higher revenues for the government.
 
-The rest is history and the Napkins is today part of collection at the national Museum of American History [sic](http://americanhistory.si.edu/collections/search/object/nmah_1439217). 
+The rest is history and the Napkins is today part of collection at the national Museum of American History, [sic](http://americanhistory.si.edu/collections/search/object/nmah_1439217). 
 
 Our man is Arthur Laffer and the content of his napkin graffiti is the omonimous [Laffer curve].
+
+{% include image.html file="napkin.jpg" description="The original napkin, treasured at the Smithsonian" %}
 
 So what's the Laffer curve? It looks like it must be something fundamental as it is often cited (at least by media and politicians) as the reason why lowering taxes is awesome. The 'idea' is simple. Suppose you have a country and everybody pays a given fixed fraction of their income in taxes. This fraction can go from 0% to 100%. How does the government tax revenue varies with this fraction?
 
@@ -47,8 +49,9 @@ Also it can be that the actual curve giving revenues as a function of taxation i
 
 {% include image.html file="laffer1.png" description="A kitten shaped non-single valued Laffer curve" %}
 
-So 
+So to conclude, is more arguing needed in support of the statement that every conclusions drawn from the existence of a Laffer curve, and the Laffer curve itself, are pure bogus. I guess not. 
 
+AND PLEASE PLEASE PLEASE, STOP TALKING ABOUT IT, PLEAAAAAASEEEEEEEEE.
 
 
 
