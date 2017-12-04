@@ -15,7 +15,7 @@ The rest is history and the Napkins is today part of collection at the national 
 
 Our man is Arthur Laffer and the content of his napkin graffiti is the omonimous [Laffer curve].
 
-{% include image.html file="napkin.jpg" description="The original napkin, treasured at the Smithsonian" %}
+{% include image.html file="napkin.jpg" description="The original Laffer napkin, treasured at the Smithsonian" %}
 
 So what's the Laffer curve? It looks like it must be something fundamental as it is often cited (at least by media and politicians) as the reason why lowering taxes is awesome. The 'idea' is simple. Suppose you have a country and everybody pays a given fixed fraction of their income in taxes. This fraction can go from 0% to 100%. How does the government tax revenue varies with this fraction?
 
@@ -49,7 +49,7 @@ Also it can be that the actual curve giving revenues as a function of taxation i
 
 {% include image.html file="laffer1.png" description="A kitten shaped non-single valued Laffer curve" %}
 
-So to conclude, is more arguing needed in support of the statement that every conclusions drawn from the existence of a Laffer curve, and the Laffer curve itself, are pure bogus. I guess not. 
+So to conclude, is more arguing needed in support of the statement that every conclusions drawn from the existence of a Laffer curve, and the Laffer curve itself, are pure bogus? I guess not. 
 
 AND PLEASE PLEASE PLEASE, STOP TALKING ABOUT IT, PLEAAAAAASEEEEEEEEE.
 
