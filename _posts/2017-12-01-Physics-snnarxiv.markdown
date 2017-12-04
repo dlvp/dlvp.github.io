@@ -31,13 +31,18 @@ What I will do in practice, is to train a RNN on the corpus made of titles and a
 
 One of the most famous example of text generation using an RNN is the one in Andrej Karpathy's [blog](http://karpathy.github.io/2015/05/21/rnn-effectiveness/), in which an RNN trained on the Shakespeare corpus is then used to generate new text character by character. This approach would be immediately exportable to the sNNarXiv. The problem is that it doesn't work well. Maybe again because of limited time/computing resources the results that comes out try to do this are not good. If the RNN is trained on sequences of characters, before being able to generate reasonable abstracts, it has to learn english syntax and the training become very long, probably too long given the limited size of the training set.
 
-The strategy I will follow is instead to train the RNN on the sequence of words making the titles and abstracts.
+The strategy I will follow instead is to train the RNN on the sequence of words making the titles and abstracts. Since the number of unique words that will appear in the corpus that I will use is around 10k, it will be crucial to encode them using a distributed vector representation in order to reduce the dimension of the input space.
 
 In the following I will describe the algorithm used to generate abstracts and briefly sketch the modification needed for the titles, as these are very minor.
 
 # The data
 
-The data I will use for training 
+The data I will use for training are obtained from the Inspire database which I already used [here](https://dlvp.github.io/Physics-Is-it-possible/). I will extract from it all abstract and titles of papers corresponding to the hep-th category of the arXiv. There is a total of something less than 80 thousand abstracts and a total of 37 thousand unique words. This is a lot of unique words, so some preprocessing of the abstract is necessary.
+
+All text in parethesis is removed from the abstracts. Abstract can contain formulas and these can be particularly difficult to learn because the may display a lot of variations. Instead of trying to learn a formula I replace all formula in one abstract with a special string, `xxxxx`, so that I will just be able to substitute a formula whenever this special string appear after the abstracts are generated. Indentifying a formula can be complicated. In principle all inline math expressions in Latex are surrounded by `$` signs so this command 
+
+``js  ciao``
+
 
 
 
