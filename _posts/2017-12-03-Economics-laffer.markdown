@@ -31,7 +31,7 @@ Jokes aside, it is clearly obvious that no conclusion can be obtained from the o
 
 My readers (according to Google Analytics they are a folk from Russia and another one from Boston) will surely recognize in the previous explanation of the Laffer curve, a statement of the so called Rolle's theorem: 
 
-<i>any real-valued differentiable function that attains equal values at two distinct points must have at least one stationary point somewhere between them</i>. 
+<em>"any real-valued differentiable function that attains equal values at two distinct points must have at least one stationary point somewhere between them"</em>. 
 
 In particular if the function is positive there will be a maximum. This is the special point T. 
 
