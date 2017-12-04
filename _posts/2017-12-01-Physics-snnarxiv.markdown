@@ -53,7 +53,7 @@ good_char=u'0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM,.!?;:
 
 and I substitute with the special string `xxxxx` all words which contains characters other than `good_chars`.  All words are also downcased and a the special character `#` is added at the end of every abstract. Finally all abstracts containing words occurring less than 5 times are removed. There are also a few extra minor modification that I apply, as for instance modifying special unicode chars that sometimes appear, that you can see on the notebook [here](https://github.com/dlvp/)). In the end I am left with order 50 thousand abstract and order roughly 10 thousand unique words.
 
-Similanr massaging is done to the titles dataset. One main difference here is that titles containing formulas are dropped altogether.
+Similar massaging is done to the titles dataset. One main difference here is that titles containing formulas are dropped altogether.
 
 
 
