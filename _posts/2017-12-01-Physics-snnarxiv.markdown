@@ -37,13 +37,15 @@ In the following I will describe the algorithm used to generate abstracts and br
 
 # The data
 
-The data I will use for training are obtained from the Inspire database which I already used [here](https://dlvp.github.io/Physics-Is-it-possible/). I will extract from it all abstract and titles of papers corresponding to the hep-th category of the arXiv. There is a total of something less than 80 thousand abstracts and a total of 37 thousand unique words. This is a lot of unique words, so some preprocessing of the abstract is necessary.
+The data I will use for training are obtained from the Inspire database which I already used [here](https://dlvp.github.io/Physics-Is-it-possible/). I will extract from it all abstracts and titles of papers corresponding to the hep-th category of the arXiv. There is a total of something less than 80 thousand abstracts and a total of 37 thousand unique words. This is a lot of unique words, so some preprocessing of the abstract is necessary.
 
-All text in parethesis is removed from the abstracts. Abstract can contain formulas and these can be particularly difficult to learn because the may display a lot of variations. Instead of trying to learn a formula I replace all formula in one abstract with a special string, `xxxxx`, so that I will just be able to substitute a formula whenever this special string appear after the abstracts are generated. Indentifying a formula can be complicated. In principle all inline math expressions in Latex are surrounded by `$` signs so this command takes care of that
+All text in parethesis is removed from the abstracts. Abstract can contain formulas and these can be particularly difficult to learn because the may display a lot of variations. Instead of trying to learn a formula I replace all formulas in one abstract with a special string, `xxxxx`, so that I will just be able to substitute a formula whenever this special string appear after the abstracts are generated. Indentifying a formula can be complicated. In principle all inline math expressions in Latex are surrounded by `$` signs so this command takes care of that
 
 ``
 re.sub('\$.*?\$','xxxxx',abstract, flags=re.DOTALL)
 ``
+
+Formulas of this kind are saved to a file, so that they can be substituted back later after generation is concluded.
 
 Sometimes people just put theis formulas with no `$` signs in their abstract. In order to take care of that I define a set of standard characters 
 
@@ -53,11 +55,12 @@ good_char=u'0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM,.!?;:
 
 and I substitute with the special string `xxxxx` all words which contains characters other than `good_chars`.  All words are also downcased and a the special character `#` is added at the end of every abstract. Finally all abstracts containing words occurring less than 5 times are removed. There are also a few extra minor modification that I apply, as for instance modifying special unicode chars that sometimes appear, that you can see on the notebook [here](https://github.com/dlvp/)). In the end I am left with order 50 thousand abstract and order roughly 10 thousand unique words.
 
-Similar massaging is done to the titles dataset. One main difference here is that titles containing formulas are dropped altogether.
+Similar massaging is done to the titles dataset. One main difference here is that titles containing formulas (as defined above) are dropped altogether.
 
 
+# Recurrent Neural Networks 101
 
-
+A Recurrent Neural Network (RNN) is a Neural Network adopting a particular parameter sharing framework suited to handling data with some kind of sequential structure. Using RNN to generate text is a very 2015 topic. There are plenty of blog posts on the subject ([this](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) is a great one ) and even [books](http://www.deeplearningbook.org/) now. For this reason I feel I am allowed to be quite sloppy in my discussion.
 
 
 
