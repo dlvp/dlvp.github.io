@@ -60,7 +60,17 @@ Similar massaging is done to the titles dataset. One main difference here is tha
 
 # Recurrent Neural Networks 101
 
-A Recurrent Neural Network (RNN) is a Neural Network adopting a particular parameter sharing framework suited to handling data with some kind of sequential structure. Using RNN to generate text is a very 2015 topic. There are plenty of blog posts on the subject ([this](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) is a great one ) and even [books](http://www.deeplearningbook.org/) now. For this reason I feel I am allowed to be quite sloppy in my discussion.
+A Recurrent Neural Network (RNN) is a Neural Network adopting a particular parameter sharing framework suited to handling data with some kind of sequential structure. Using RNN to generate text is a very 2015 topic. There are plenty of blog posts on the subject ([this](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) is a great one ) and even [books](http://www.deeplearningbook.org/) now. For this reason I feel I am allowed to streamline my discussion, without entering into the details on how a RNN works.
+
+{% include image.html file="RNN1.png" description="The basic recurrent neuron. Green circles represent affine transformations on the input, while the red dots represent elementwise non linearities." %}
+
+
+
+WHAT DOES THE RNN DO IN PRACTICE?
+
+There are a few crucial points to discuss however. It is well known that a RNN using basic cells have big problems in handling long term correlations in a sequence. This is because, when unrolled in time over several time steps, gradients tend either to become extremely large or vanishingly small leading to either instabilities or no training. The solution to this is to use special units as [LSTM](https://en.wikipedia.org/wiki/Long_short-term_memory), [GRU](https://en.wikipedia.org/wiki/Gated_recurrent_unit) and so on. I am gonna be using GRU units in the RNN I will build: they are easier to understand and they appear to work better with the problem at hand
+
+A second important point has to do with the way words are represented in the network.
 
 
 
