@@ -9,7 +9,7 @@ date: '2017-12-01 8:00:00'
 
 I talked about the [arXiv] in my previous post. If you are a theoretical phisicist and you write a paper you will post it there whenever it is ready. Everyday (Friday and Saturday excluded) at 8PM Eastern US Time the new papers of the day will appear on the website. Notice in also that the 'X' in arXiv is supposed to be a greek 'chi' so that arXiv is pronounced 'archive'. The following is a screenshot of papers titles and abstracts from a random Friday. 
 
-{% include image.html file="snarxiv.png" description="Hep-th" %}
+{% include image.html file="snarxiv.png" description="Figure 1. Hep-th" %}
 
 If this sounds OK to you, nice, the trick worked. These are not real papers from the arXiv. They come from [snarXiv](http://snarxiv.org/). The snarXiv is able to generate plausible titles and abstracts for papers on hep-th that do not actually exist. It was built by a real physicist, David Simmons-Duffin, now assistant professor at Caltech. The snarXiv is built using so colled Context-Free Grammars ([CFG]). They are a set of recursion rules that can be used to generate strings with a specific pattern. Since most linguistic forms appearing in naural languages are context-free, given the right set of rules the generated strings will sound like reasonable abstracts.
 
@@ -60,11 +60,15 @@ Similar massaging is done to the titles dataset. One main difference here is tha
 
 # Recurrent Neural Networks 101
 
-A Recurrent Neural Network (RNN) is a Neural Network adopting a particular parameter sharing framework suited to handling data with some kind of sequential structure. Using RNN to generate text is a very 2015 topic. There are plenty of blog posts on the subject ([this](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) is a great one ) and even [books](http://www.deeplearningbook.org/) now. For this reason I feel I am allowed to streamline my discussion, without entering into the details on how a RNN works.
+A Recurrent Neural Network (RNN) is a Neural Network adopting a particular parameter sharing framework suited to handling data with some kind of sequential structure. Using RNN to generate text is a very 2015 topic. There are plenty of blog posts on the subject ([this](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) is a great one ) and even [books](http://www.deeplearningbook.org/) now. For this reason I feel I am allowed to streamline my discussion, without discussing too many details about recurrent nets.
 
-{% include image.html file="RNN1.png" description="The basic recurrent neuron. Green circles represent affine transformations on the input, while the red dots represent elementwise non linearities." %}
+The basic unit of a RNN is the recurrent unit. A recurrent neuron, as every NN unit, has in input and an output. On top of these a recurrent unit has a state. The state serves as a memory. What makes a recurrent unit recurrent is the fact that its output at time 't', depends on the input at time 't' but also on the state of the unit at time 't-1'. See Figure 2 for the very simple math.
 
+{% include image.html file="RNN1.png" description="Figure 2. The basic recurrent unit. Green circles represent affine transformations on the input, while the red dots represent elementwise non linearities." %}
 
+Such a non-local time dependence can be puzzling especially if one is trying to figure out how backpropagation is going to work. The trick is to fix a 
+
+{% include image.html file="RNN2.png" description="Figure 3. A RNN unrolled through time for T time steps." %}
 
 WHAT DOES THE RNN DO IN PRACTICE?
 
