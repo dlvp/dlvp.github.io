@@ -62,21 +62,36 @@ Similar massaging is done to the titles dataset. One main difference here is tha
 
 A Recurrent Neural Network (RNN) is a Neural Network adopting a particular parameter sharing framework suited to handling data with some kind of sequential structure. Using RNN to generate text is a very 2015 topic. There are plenty of blog posts on the subject ([this](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) is a great one ) and even [books](http://www.deeplearningbook.org/) now. For this reason I feel I am allowed to streamline my discussion, without discussing too many details about recurrent nets.
 
-The basic unit of a RNN is the recurrent unit. A recurrent neuron, as every NN unit, has in input and an output. On top of these a recurrent unit has a state. The state serves as a memory. What makes a recurrent unit recurrent is the fact that its output at time 't', depends on the input at time 't' but also on the state of the unit at time 't-1'. See Figure 2 for the very simple math.
+The basic unit of a RNN is the recurrent unit. A recurrent neuron, as every NN unit, has in input and an output. On top of these a recurrent unit has a state. The state serves as a memory. What makes a recurrent unit recurrent is the fact that its output at time <i>t</i>, depends on the input at time <i>t</i> but also on the state of the unit at time <i>t-1</i>. See Figure 2 for the very simple math.
 
 {% include image.html file="RNN1.png" description="Figure 2. The basic recurrent unit. Green circles represent affine transformations on the input, while the red dots represent elementwise non linearities." %}
 
-Such a non-local time dependence can be puzzling especially if one is trying to figure out how backpropagation is going to work. The trick is to fix a 
+Such a non-local time dependence can be puzzling especially if one is trying to figure out how backpropagation is going to work. The trick is to fix a number <i>T</i>, an initial value for the hidden state, and unroll the the RNN through T time steps. See Figure 3.
 
 {% include image.html file="RNN2.png" description="Figure 3. A RNN unrolled through time for T time steps." %}
 
-WHAT DOES THE RNN DO IN PRACTICE?
+Such an unrolled RNN is just a standard neural network with weights which are shared among neurons. As for standard NN one can stack one recurrent unit on top of another to get a multilayer RNN.
 
-There are a few crucial points to discuss however. It is well known that a RNN using basic cells have big problems in handling long term correlations in a sequence. This is because, when unrolled in time over several time steps, gradients tend either to become extremely large or vanishingly small leading to either instabilities or no training. The solution to this is to use special units as [LSTM](https://en.wikipedia.org/wiki/Long_short-term_memory), [GRU](https://en.wikipedia.org/wiki/Gated_recurrent_unit) and so on. I am gonna be using GRU units in the RNN I will build: they are easier to understand and they appear to work better with the problem at hand
+One problem with these basic recurrent units is well known, and has to do with the poor way they are able to handle long term correlations in a sequence. When unrolled in time over several time steps, backpropagated gradients tend either to become extremely large or vanishingly small leading to either instabilities or no training. The solution to this is to replace the basic recurrent unit with special units like [LSTM](https://en.wikipedia.org/wiki/Long_short-term_memory), [GRU](https://en.wikipedia.org/wiki/Gated_recurrent_unit) and so on. I am not gonna try to explain the way these work. If you code your RNN with something like TensorFlow you can just build your RNN using these special units instead of the basic recurrent ones. If you want to know more there are plenty of resources online. I suggest again [this](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) to start.
 
-A second important point has to do with the way words are represented in the network.
+I am gonna be using GRU units in the RNN I will build: they are easier to understand than LSTM and they appear to work better with the problem at hand.
 
+The job for the RNN I will build is the following. At time <i>t</i> the RNN will be fed the <i>t</i>-th word of an abstract (or title) and, given its hidden state function of all previous words, will try to predict the <i>t+1</i>-th word.
 
+An important point to discuss is the way words are represented in the network. The size <i>S</i> of the vocabulary is of order 12k. A one-hot embedding of such a dimension would be extremely inefficient. The way to go is to pick a denser embedding, in which every word is represented as a vector in some lower dimensional space of dimension <i>D</i>.
+
+In TensorFlow such data embeddings can be handled through the following commands:
+
+``
+embeddings = tf.get_variable('embedding_matrix', initializer=init_emb)
+rnn_inputs = tf.nn.embedding_lookup(embeddings, x)
+``
+
+`embeddings` is a TF tensor of shape `[S,D]` containing the word embeddings, which are initialized to some value `init_emb`. The function `tf.nn.embedding_lookup` takes a tensor `x` of shape `[d1,...,dn]` (in this case it contains batched input data) and turns it into a tensor of shape `[d1,...,dn,D]` substituting to its entries the appropriate embedding.
+
+The embedding matrix can be understood as an affine transformation between the one-hot embedding space and the distributed one. `embeddings` is indeed a TF variable and as such its weigths will be updated during backpropagation. From this point of view it sounds as a good idea to initialize this variable not with a random embedding, but with one which already capture some of the statistical correlation in the corpus we are trying to learn.
+
+The most famous distributed word embedding is probably [Word2Vec](https://en.wikipedia.org/wiki/Word2vec). To be precise Word2Vec is not the embedding itself but it is the algorithm to generate such an embedding. 
 
 
 
