@@ -4,8 +4,6 @@ title: sNNarXiv 1.0
 series: Physics
 date: '2017-12-01 8:00:00'
 ---
-## This post is still work in progress !!
-
 
 I talked about the [arXiv] in my previous post. If you are a theoretical phisicist and you write a paper you will post it there whenever it is ready. Everyday (Friday and Saturday excluded) at 8PM Eastern US Time the new papers of the day will appear on the website. Notice in also that the 'X' in arXiv is supposed to be a greek 'chi' so that arXiv is pronounced 'archive'. The following is a screenshot of papers titles and abstracts from a random Friday. 
 
