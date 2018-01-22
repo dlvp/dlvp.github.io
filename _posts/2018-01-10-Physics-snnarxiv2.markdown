@@ -4,6 +4,8 @@ title: Of sNNarXiv titles
 series: Physics
 date: '2018-01-10 8:00:00'
 ---
+# Work in progress!
+
 
 This is a follow up on the [sNNarXiv](https://dlvp.github.io/Physics-snnarxiv/) project. I closed that post with a wishlist. One thing I thought would have been cool was some kind of algorithm to generate titles conditioning on an abstract. This is typically what happens in real life, so why not. Turns out that the simplest implementation of such an algorithm is quite easy and well known.
 
