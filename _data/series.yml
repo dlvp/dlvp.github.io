@@ -5,3 +5,7 @@ Physics:
 Economics:
     name: "Economics"
     description: ""
+
+ML:
+name: "Machine Learning"
+description: ""
